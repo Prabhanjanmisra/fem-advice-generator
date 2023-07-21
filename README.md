@@ -30,8 +30,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Solution](https://your-solution-url.com)
-- Live Site URL: [Website](https://your-live-site-url.com)
+- Solution URL: [Solution](https://github.com/Prabhanjanmisra/fem-advice-generator)
+- Live Site URL: [Website](https://prabhanjanmisra.github.io/fem-advice-generator/)
 
 ## My process
 
@@ -44,4 +44,4 @@ Users should be able to:
 
 
 ## Author
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/Prabhanjanmisra)
+- Frontend Mentor - [@Prabhanjanmisra](https://www.frontendmentor.io/profile/Prabhanjanmisra)
