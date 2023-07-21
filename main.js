@@ -24,6 +24,7 @@ const refreshButton = $("#button-circle");
 refreshButton.on("click", refresh);
 
 $(window).on("load", function() {
+    alert("Click on the dice to refresh.");
     fetch("https://api.adviceslip.com/advice")
         .then(res => res.json())
         .then(data => {
