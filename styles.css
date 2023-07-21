@@ -1,0 +1,142 @@
+:root {
+    --Grayish-Blue: hsl(217, 19%, 38%);
+    --Dark-Grayish-Blue: hsl(217, 19%, 24%);
+    --Dark-Blue: hsl(218, 23%, 16%);
+    --Light-Cyan: hsl(193, 38%, 86%);
+    --Neon-Green: hsl(150, 100%, 66%);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Manrope', sans-serif;
+}
+
+h1 {
+    color: var(--Light-Cyan);
+    font-size: 28px;
+}
+
+a {
+    color: var(--Neon-Green);
+    text-decoration: none;
+}
+
+/* container */
+
+.container {
+    height: 100vh;
+    background-color: var(--Dark-Blue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.quote-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+    background-color: var(--Dark-Grayish-Blue);
+    max-width: 520px;
+    padding: 50px 35px 70px;
+    border-radius: 15px;
+    position: relative;
+}
+
+.quote-block p {
+    font-size: 0.8rem;
+    letter-spacing: 4px;
+    color: var(--Neon-Green);
+}
+
+.rule {
+    margin-top: 10px;
+}
+
+.rule-mobile {
+    margin-top: 10px;
+    display: none;
+}
+
+#button-circle {
+    background-color: var(--Neon-Green);
+    display: flex;
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    transform: translate(-50%, 50%);
+}
+
+#button-circle:hover {
+    box-shadow: 0 0 50px var(--Neon-Green);
+}
+
+.clicked {
+    width: 50px !important;
+    height: 50px !important;
+    border-radius: 25px !important;
+}
+
+
+/* Attribution */
+
+.attribution {
+    display: flex;
+    flex-direction: row-reverse;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    color: var(--Light-Cyan);
+    font-size: 0.8rem;
+}
+
+#my-img {
+    height: 40px;
+    border-radius: 20px;
+}
+
+
+#hidden {
+    max-width: 340px;
+    margin-right: 10px;
+    background: var(--Dark-Grayish-Blue);
+    padding: 10px;
+    border-radius: 12px;
+}
+
+.hide {
+    display: none;
+}
+
+
+/* Responsive */
+
+@media(max-width: 700px) {
+    .quote-block {
+        max-width: 370px;
+        min-width: 320px;
+    }
+
+    .rule {
+        display: none;
+    }
+
+    .rule-mobile {
+        display: block;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+}
